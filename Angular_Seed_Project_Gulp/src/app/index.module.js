@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('inspinia', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap',
+    .module('dossier', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap',
       'dx',
       'ui.sortable',
       'auth0.lock', 'angular-jwt']);

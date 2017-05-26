@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('inspinia')
+    .module('dossier')
     .run(runBlock);
 
   /** @ngInject */

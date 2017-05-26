@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('inspinia')
+    .module('dossier')
     .config(routerConfig);
 
   /** @ngInject */
@@ -27,7 +27,26 @@
         controller: 'MainController',
         controllerAs: "main",
         data: { pageTitle: 'Example view' }
-      });
+      })
+      
+      
+       .state('requests', {
+        abstract: true,
+        url: "/requests",
+        templateUrl: "app/components/common/content.html"
+      })
+      .state('requests.queries', {
+        url: "/main",
+        templateUrl: "app/pages/main/main.html",
+        controller: 'MainController',
+        controllerAs: "main"        
+      })
+      .state('requests.packages', {
+        url: "/minor",
+        templateUrl: "app/pages/minor/minor.html",
+        controller: 'MainController',
+        controllerAs: "main"        
+      });;
 
     $urlRouterProvider.otherwise('/index/main');
   }

@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('inspinia')
+    angular.module('dossier')
         .config(config);
 
     /** @ngInject */

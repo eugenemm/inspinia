@@ -1,5 +1,5 @@
 /**
- * INSPINIA - Responsive Admin Theme
+ * dossier - Responsive Admin Theme
  * 2.7
  *
  * Custom scripts

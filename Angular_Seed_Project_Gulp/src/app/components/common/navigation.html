@@ -10,19 +10,17 @@
                                 <span class="block m-t-xs">
                                     <strong class="font-bold">{{currentUser.name}}</strong>
                              </span>
-                        <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                        <span class="text-muted text-xs block"> управление <b class="caret"></b></span>
                         </span>
                     </a>
                     <ul uib-dropdown-menu class="animated fadeInRight m-t-xs">
-                        <li><a ui-sref="app.profile">Profile</a></li>
-                        <li><a ui-sref="app.contacts">Contacts</a></li>
-                        <li><a ui-sref="mailbox.inbox">Mailbox</a></li>
+                        <li><a ui-sref="app.profile">Профиль</a></li>
                         <li class="divider"></li>
-                        <li><a href ng-click="authService.logout()">Logout</a></li>
+                        <li><a href ng-click="authService.logout()">Выход</a></li>
                     </ul>
                 </div>                
                 <div class="logo-element">
-                    IN+
+                    Досье
                 </div>
 
             </li>
@@ -35,6 +33,19 @@
                     </li>
                     <li ui-sref-active="active">
                         <a ui-sref="index.minor"><i class="fa fa-desktop"></i> <span class="nav-label">Minor page</span></a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li ng-class="{active: $state.includes('requests')}">
+                <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Запросы</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('requests')}">
+                    <li ui-sref-active="active">
+                        <a ui-sref="requests.queries"><i class="fa fa-laptop"></i> <span class="nav-label">Запросы</span> </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="requests.packages"><i class="fa fa-desktop"></i> <span class="nav-label">Пакеты</span></a>
                     </li>
                 </ul>
             </li>

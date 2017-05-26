@@ -3,7 +3,7 @@
     'use strict';
 
     angular
-        .module('inspinia')
+        .module('dossier')
         .service('authService', authService);
 
     function authService($http, $rootScope, lock, authManager) {

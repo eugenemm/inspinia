@@ -16,12 +16,16 @@
       })
       .state('index.main', {
         url: "/main",
-        templateUrl: "app/main/main.html",
+        templateUrl: "app/pages/main/main.html",
+        controller: 'MainController',
+        controllerAs: "main",
         data: { pageTitle: 'Example view' }
       })
       .state('index.minor', {
         url: "/minor",
-        templateUrl: "app/minor/minor.html",
+        templateUrl: "app/pages/minor/minor.html",
+        controller: 'MainController',
+        controllerAs: "main",
         data: { pageTitle: 'Example view' }
       });
 
